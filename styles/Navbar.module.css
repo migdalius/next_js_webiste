@@ -1,12 +1,13 @@
 .container {
   height: 100px;
   padding: 0px 50px;
-  background-color: #d1411e;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: static;
   top: 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .item {
@@ -19,8 +20,12 @@
   flex: 3;
 }
 
+.item:last-child {
+  justify-content: flex-end;
+}
+
 .callButton {
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   padding: 10px;
   width: 50px;
@@ -29,7 +34,7 @@
 
 .texts {
   margin-left: 20px;
-  color: white;
+  color: black;
 }
 
 .text:first-child {
@@ -40,4 +45,37 @@
 .text:last-child {
   font-size: 20px;
   font-weight: bold;
+}
+
+.list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: black;
+}
+
+.listItem {
+  margin: 20px;
+  font-weight: 500;
+}
+
+.cart {
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #d1411e;
 }
